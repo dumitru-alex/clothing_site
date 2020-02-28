@@ -66,3 +66,19 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Notes for me
+
+Make a VSCode task that creates new `component` files (it is a repetitive task in this kind of projects).  
+In <src/components>:
+
+-   creates <component_name> folder
+-   inside the folder it creates <component_name>.component.jsx and <component_name>.styles.scss files
+-   initialize the `.jsx` file with
+
+```
+import React from "react";
+import "./<component_name>.styles.scss";
+```
+
+> Same for `Pages`
