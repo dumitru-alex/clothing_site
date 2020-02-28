@@ -82,3 +82,31 @@ import "./<component_name>.styles.scss";
 ```
 
 > Same for `Pages`
+
+DONE! Update tasks.json with the following:
+
+```
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Create React Component",
+            "type": "shell",
+            "command": "./scripts/createReactComponent.sh",
+            "args": ["${input:componentName}"],
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "componentName",
+            "type": "promptString",
+            "description": "React Component Name"
+        }
+    ]
+}
+```
+
+> I am running Git Bash in the integrated terminal!
